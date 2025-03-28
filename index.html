@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarth-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: poppins;
+            background-color: rgb(2, 2, 36);
+            color: antiquewhite;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(3, 3, 69);
+            height: 80px;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            color: rgb(134, 189, 237);
+            font-size: 15px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .first>div {
+            width: 30%;
+
+        }
+
+        .RightSection img {
+            width: 80%;
+            margin: 50px 0;
+            border-radius: 12pc;
+        }
+
+        .leftSection {
+            padding: 0%;
+            font-size: 40px;
+            ;
+            /* margin: 80px 0;
+            margin-left: 50px; */
+        }
+
+        .leftSection .btn {
+            background-color: #29086f;
+            /* Green background */
+            border: none;
+            /* No border */
+            color: white;
+            /* White text */
+            padding: 10px 20px;
+            /* Padding around the text */
+            text-align: center;
+            /* Center text inside the button */
+            text-decoration: none;
+            /* Remove underline */
+            display: inline-block;
+            /* Align it inline with other elements */
+            font-size: 16px;
+            /* Font size */
+            margin: 10px 2px;
+            /* Margin around the button */
+            cursor: pointer;
+            /* Change the cursor on hover */
+            border-radius: 5px;
+            /* Rounded corners */
+            transition: background-color 0.3s, transform 0.2s;
+            /* Smooth transition for hover effect */
+        }
+
+        /* Hover effect */
+        .leftSection .btn:hover {
+            background-color: #45a049;
+            /* Darker green on hover */
+            transform: scale(1.05);
+            /* Slightly enlarge the button */
+        }
+
+        /* Focus style for accessibility */
+        .leftSection .btn:focus {
+            outline: none;
+            /* Remove default focus outline */
+            box-shadow: 0 0 0 3px rgba(72, 133, 255, 0.5);
+            /* Add custom focus outline */
+        }
+
+        .purple {
+            color: rgb(148 135 237);
+        }
+
+        .web {
+            color: rgb(148 135 237);
+        }
+
+        /*.leftSection.div{
+          font-size: 30px;
+        }
+        .RightSection{
+          background-color: rgb(142, 26, 28);
+        }  */
+        .Second {
+            max-width: 80vw;
+            margin: auto;
+            height: 469px;
+            /* background-color: #eaebf3; */
+        }
+
+        main hr {
+            border: 0;
+            height: 1.2px;
+            font-size: 20px;
+            background-color: #7887cc;
+            margin: 60px 84px;
+        }
+
+        .text-grey {
+            color: rgb(163, 158, 158);
+            font-size: 15px;
+
+        }
+
+        .Second .Box {
+            display: flex;
+            height: 2px;
+            width: 80vw;
+            background-color: #eaebf3;
+            margin: 56px 0;
+
+        }
+
+        .Second .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: azure;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 25px;
+            position: relative;
+            top: -34px;
+            left: -11px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 62px;
+            left: -18px;
+            font-size: 15px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 62px;
+            left: -18px;
+            font-size: 6px;
+            width: 92px;
+            color: grey;
+        }
+
+        /* footer {
+            position: relative;
+            margin-top: 400px;
+            height: 121px;
+            background-color: #5f6066;
+        } */
+        footer {
+            background-color: #282729;
+            /* height: 233px; */
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px 122px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 120px;
+        }
+
+        footer .text-right {
+            text-align: center;
+            padding: 60px;
+            color: #4d4c4e;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sarth Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact ME</a></li>
+
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftSection">
+                Hi My name is <span class="purple">Sarth</span>
+                <div>and i am a passinate</div>
+                <div class="web">web developer</div>
+                <button class="btn">
+                    Download Resume
+                </button>
+                <button class="btn">
+                    Github
+                </button>
+
+            </div>
+            <div class="RightSection">
+                <img src="port.PNG" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="Second">
+            <span class='text-grey'>
+                Skills i have done
+            </span>
+            <h1>Skills</h1>
+            <div class="Box">
+                <div class="vertical">
+                    <img class='image-top' src="HTML.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">
+                        An HTML (HyperText Markup Language) description typically refers to a concise explanation of the
+                        structure and content of an HTML document. HTML is the standard language used for creating web
+                        pages, and it consists of various elements marked up with tags to define the structure of text,
+                        images, links, multimedia, and other elements that appear on a webpage.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class='image-top' src="CSS.png" alt="">
+                    <div class="vertical-title">
+                        CSS Developer
+                    </div>
+                    <div class="vertical-desc">
+                        CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation and
+                        layout of a document written in HTML or XML. It allows developers to control the appearance of a
+                        webpage, including the colors, fonts, spacing, positioning, and overall design.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class='image-top' src="javascript.png" alt="">
+                    <div class="vertical-title">
+                        javascript Developer
+                    </div>
+                    <div class="vertical-desc">
+                        JavaScript is a versatile, high-level programming language primarily used to create interactive
+                        effects and dynamic behavior on webpages. It is a core technology of the web, alongside HTML and
+                        CSS, and is essential for adding functionality to websites.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class='image-top' src="python.png" alt="">
+                    <div class="vertical-title">
+                        Python Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Python is a high-level, interpreted, and general-purpose programming language known for its
+                        simplicity, readability, and versatility. It is one of the most popular programming languages
+                        and is widely used in various fields like web development, data science, artificial
+                        intelligence, automation, scientific computing, and more.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class='image-top' src="MYSQL.png" alt="">
+                    <div class="vertical-title">
+                        MYSQL Database
+                    </div>
+                    <div class="vertical-desc">
+                        MySQL is an open-source relational database management system (RDBMS) that uses Structured Query
+                        Language (SQL) for managing and interacting with databases. It is one of the most widely used
+                        databases, particularly in web applications and services.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class='image-top' src="Mongo.png" alt="">
+                    <div class="vertical-title">
+                        MongoDB Database
+                    </div>
+                    <div class="vertical-desc">
+                        MongoDB is a widely-used, open-source, NoSQL (Not Only SQL) database that stores data in a
+                        flexible, document-oriented format. Unlike traditional relational databases that store data in
+                        tables with rows and columns, MongoDB stores data as documents in collections, offering greater
+                        flexibility and scalability, especially for large, complex, or rapidly changing datasets.
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer0">
+                <h3>Sarth Developer Portfolio</h3>
+            </div>
+            <div class="footer1">
+                <ul>
+                    <li>Home</li>
+                    <li>about</li>
+                    <li>Contact</li>
+                    <li>Search</li>
+                </ul>
+            </div>
+            <div class="footer2">
+                <ul>
+                    <li>Home</li>
+                    <li>about</li>
+                    <li>Contact</li>
+                    <li>Search</li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <ul>
+                    <li>Home</li>
+                    <li>about</li>
+                    <li>Contact</li>
+                    <li>Search</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-right">
+            www.sarth.com || All right reserve
+        </div>
+    </footer>
+</body>
+
+</html>
